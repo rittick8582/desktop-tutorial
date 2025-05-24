@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Homepage</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #2C3E50;
+      letter-spacing: 2px;
+      cursor: default;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #2C3E50;
+      margin-left: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2980b9;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    main .hero {
+      margin-bottom: 3rem;
+    }
+
+    main .hero h2 {
+      font-weight: 700;
+      font-size: 3rem;
+      color: #FFF;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
+    }
+
+    main .hero p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      color: #F0F0F0;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    }
+
+    main .hero button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 0.9rem 2.5rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(41, 128, 185, 0.5);
+      transition: background-color 0.3s ease;
+    }
+
+    main .hero button:hover {
+      background-color: #1c6789;
+    }
+
+    main .features {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    main .feature {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      padding: 1.75rem 1.5rem;
+      flex: 1 1 250px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+
+    main .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    main .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #2C3E50;
+    }
+
+    main .feature p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: rgba(44, 62, 80, 0.9);
+      color: #bdc3c7;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    @media (max-width: 700px) {
+      main .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BrightSite</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to BrightSite</h2>
+      <p>Your smart solution to modern web presence. Engage your audience with style and functionality.</p>
+      <button>Get Started</button>
+    </section>
+    <section class="features" id="features">
+      <article class="feature">
+        <h3>Responsive Design</h3>
+        <p>Seamlessly adapts to any device, ensuring your site looks great everywhere.</p>
+      </article>
+      <article class="feature">
+        <h3>Modern UI</h3>
+        <p>Clean, elegant, and carefully crafted to provide an outstanding user experience.</p>
+      </article>
+      <article class="feature">
+        <h3>Fast Performance</h3>
+        <p>Optimized to load quickly and reliably, keeping your visitors happy and engaged.</p>
+      </article>
+    </section>
+  </main>
+  <footer id="contact">
+    &copy; 2024 BrightSite. All rights reserved.
+  </footer>
+</body>
+</html>
+
